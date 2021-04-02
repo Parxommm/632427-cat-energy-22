@@ -1,0 +1,13 @@
+.site-list {
+  list-style: none;
+  padding: 0;
+  a {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic-black;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,25 @@
+.page-footer__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.page-footer__invitation {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.page-footer__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+}
+
+.page-footer__copyright {
+  a {
+    color: $special_grey-2;
+    text-decoration: none;
+  }
+}
