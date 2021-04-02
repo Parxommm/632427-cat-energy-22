@@ -1,11 +1,12 @@
 .button {
   display: inline-block;
   min-height: 40px;
-  padding: 8px 20px;
+  padding: 7px 20px;
   box-sizing: border-box;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   background-color: $basic-green;

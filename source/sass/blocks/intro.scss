@@ -1,7 +1,8 @@
 .intro {
-  background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url('../../img/intro-background.jpg');
+  background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-size: auto 302px;
+  background-position: top;
 }
 
 .intro__wrapper {
@@ -10,21 +11,25 @@
 }
 
 .intro__header {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: $basic-white;
+  padding-top: 27px;
 }
 
 .intro__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  text-align: center;
 }
 
 .intro__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .intro__button {

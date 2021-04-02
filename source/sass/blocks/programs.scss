@@ -1,6 +1,6 @@
 .programs__wrapper {
-    padding: 0 20px;
-    margin: 0 auto;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .programs__list {
@@ -13,7 +13,7 @@
 }
 
 .programs__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -27,7 +27,7 @@
 }
 
 .programs__link {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   color: $basic-black;
   text-decoration: none;
   text-transform: uppercase;

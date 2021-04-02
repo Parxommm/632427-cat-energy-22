@@ -1,10 +1,11 @@
-.page-footer__wrapper {
+.page-footer__top,
+.page-footer__bottom {
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .page-footer__invitation {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -17,9 +18,25 @@
   color: $special_dark-grey;
 }
 
+.page-footer__map {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.page-footer__logo {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .page-footer__copyright {
   a {
-    color: $special_grey-2;
+    font-size: 16px;
+    line-height: 18.4px;
+    color: $special_dark-grey;
     text-decoration: none;
   }
 }
