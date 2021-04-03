@@ -1,0 +1,21 @@
+.problems__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.problems__item {
+  min-height: 30px;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.problems__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}

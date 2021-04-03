@@ -1,0 +1,17 @@
+.comment__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.comment__text {
+  min-width: 280px;
+  height: 150px;
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $special_dark-grey;
+    text-transform: uppercase;
+  }
+}

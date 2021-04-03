@@ -1,0 +1,25 @@
+.program-selection {
+  font-family: "Oswald", sans-serif;
+
+  fieldset {
+    margin: 0;
+  }
+}
+
+.program-selection__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.program-selection__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program-selection__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
