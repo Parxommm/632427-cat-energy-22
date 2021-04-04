@@ -17,4 +17,18 @@
   color: $basic-white;
   text-decoration: none;
   text-align: center;
+  max-width: 200px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    left: 25%;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
