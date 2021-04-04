@@ -1,0 +1,44 @@
+.optionally-product {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.optionally-product__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.optionally-product__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.optionally-product__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.optionally-product__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_dark-grey-2;
+}
+
+.optionally-product__info {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
+
+.optionally-product__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 767px;
+}
