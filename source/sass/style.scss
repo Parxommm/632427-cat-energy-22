@@ -1,18 +1,32 @@
 // Global
 
+@import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
-@import "global/variables.scss";
 
 // Blocks
 
+// Header
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
+
+// index.html
 @import "blocks/intro.scss";
 @import "blocks/button.scss";
 @import "blocks/programs.scss";
 @import "blocks/about-product.scss";
 @import "blocks/example.scss";
+
+//Footer
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
+
+// form.html
+@import "blocks/program-selection.scss";
+@import "blocks/form.scss";
+@import "blocks/parameters.scss";
+@import "blocks/problems.scss";
+@import "blocks/contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/optionally.scss";
