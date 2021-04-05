@@ -1,0 +1,18 @@
+.input-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: $special_dark-grey;
+    text-transform: uppercase;
+  }
+}

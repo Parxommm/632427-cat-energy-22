@@ -18,15 +18,24 @@
 @import "blocks/about-product.scss";
 @import "blocks/example.scss";
 
-//Footer
-@import "blocks/page-footer.scss";
-@import "blocks/social.scss";
-
 // form.html
 @import "blocks/program-selection.scss";
+@import "blocks/input-text.scss";
+@import "blocks/label-radio-checkbox.scss";
 @import "blocks/form.scss";
 @import "blocks/parameters.scss";
 @import "blocks/problems.scss";
 @import "blocks/contacts.scss";
 @import "blocks/comment.scss";
 @import "blocks/optionally.scss";
+
+// catalog.html
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/all-products.scss";
+@import "blocks/optionally-product.scss";
+@import "blocks/promotion.scss";
+
+//Footer
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
