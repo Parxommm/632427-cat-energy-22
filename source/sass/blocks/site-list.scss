@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 110px;
+  }
 }
 
 .site-list__item {
@@ -30,7 +34,9 @@
   text-align: center;
   color: $basic-black;
   text-decoration: none;
+}
 
+.site-list__link--white {
   @media (min-width: $desktop-width) {
     color: $basic-white;
   }

@@ -4,14 +4,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background--desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    width: 720px;
-    height: 694px;
     padding-top: 69px;
     box-sizing: border-box;
+    z-index: 2;
   }
 }
 
