@@ -1,14 +1,23 @@
-.page-footer__top,
-.page-footer__bottom {
-  padding: 0 20px;
+.page-footer__top {
+  padding: 28px 20px 28px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 66px 70px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    width: 570px;
+    min-height: 201px;
+    margin: 0;
+    padding: 66px 89px 52px 76px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: $basic-white;
+    position: relative;
+    top: 100px;
+    margin-left: 110px;
+    margin-bottom: -201px;
   }
 }
 
@@ -16,17 +25,8 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    min-height: 201px;
-    margin: 0;
-    padding: 30px;
-    box-sizing: border-box;
+  @media (min-width: $tablet-width) {
     align-items: center;
-    background-color: $basic-white;
-    position: relative;
-    top: 280px;
-    margin-top: -200px;
   }
 }
 
@@ -36,28 +36,62 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .page-footer__address {
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
 }
 
 .page-footer__map {
   img {
     width: 100%;
     object-fit: cover;
+
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
 
 .page-footer__bottom {
+  padding: 39px 20px 22px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding: 54px 30px 52px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 110px 56px;
   }
 }
 
@@ -66,13 +100,46 @@
     display: block;
     margin: 0 auto;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+
   a {
     font-size: 16px;
     line-height: 18.4px;
     color: $special_dark-grey;
     text-decoration: none;
+    padding-right: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 34px;
+      background-image: url("../../img/footer-logo-academy.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }

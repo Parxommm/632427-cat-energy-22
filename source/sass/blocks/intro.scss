@@ -44,14 +44,20 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
-    min-height: 284px;
     align-items: flex-start;
+    padding: 0 85px;
+    margin-top: 62px;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     color: $basic-black;
+    padding: 0;
     padding-left: 190px;
-    padding-top: 150px;
+    padding-right: 20px;
+    margin: 0;
+    margin-top: 114px;
+    flex-shrink: 1;
   }
 }
 
@@ -61,6 +67,12 @@
   line-height: 36px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .intro__slogan {
@@ -68,6 +80,15 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 41px;
+    text-align: left;
+  }
 }
 
 .intro__button {
@@ -76,33 +97,46 @@
 
   @media (min-width: $tablet-width) {
     width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     margin: 0;
+    margin-top: 49px;
   }
 }
 
 .intro__img {
   position: relative;
-  top: -320px;
-  margin-bottom: -280px;
+  top: -340px;
+  margin-bottom: -272px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: 0;
-    margin-bottom: 0;
+    top: -250px;
+    margin-bottom: -250px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 0;
+    right: 0;
+    margin: 0;
     background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background--desktop.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
     width: 720px;
     height: 694px;
+    flex-shrink: 0;
   }
 
   img {
-    position: relative;
-    top: 200px;
-    left: -100px;
+    @media (min-width: $desktop-width) {
+      position: relative;
+      top: 200px;
+      left: -100px;
+    }
   }
 }
