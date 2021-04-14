@@ -82,6 +82,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
     padding: 54px 30px 52px;
@@ -111,35 +112,32 @@
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 22px;
-
-  a {
-    font-size: 16px;
-    line-height: 18.4px;
-    color: $special_dark-grey;
-    text-decoration: none;
-    padding-right: 50px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    display: block;
-    position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 27px;
-      height: 34px;
-      background-image: url("../../img/footer-logo-academy.svg");
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+}
+
+.page-footer__academy-link {
+  font-size: 16px;
+  line-height: 18.4px;
+  color: $special_dark-grey;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  span {
+    margin-right: 22px;
+  }
+
+  &:hover path {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
