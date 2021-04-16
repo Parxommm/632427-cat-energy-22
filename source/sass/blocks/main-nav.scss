@@ -4,9 +4,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
     box-sizing: border-box;
-    z-index: 2;
+    z-index: 3;
+  }
+}
+
+.main-nav__list {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
   }
 }
 

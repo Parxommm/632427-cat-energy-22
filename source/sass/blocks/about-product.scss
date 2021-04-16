@@ -43,14 +43,14 @@
   flex-direction: column;
   margin: 0;
   margin-top: 38px;
-  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 37px 140px;
+    gap: 70px 140px;
     margin-top: 72px;
+    counter-reset: number;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,8 +106,6 @@
     padding: 0;
     padding-right: 35px;
     margin: 0;
-    background-repeat: no-repeat;
-    background-position: 60% 50%;
 
     &::before {
       width: 80px;
@@ -115,20 +113,17 @@
       background-size: cover;
     }
 
-    &--useful {
-      background-image: url("../../img/background_number-1.svg");
-    }
-
-    &--fast {
-      background-image: url("../../img/background_number-2.svg");
-    }
-
-    &--replacement {
-      background-image: url("../../img//background_number-3.svg");
-    }
-
-    &--changes {
-      background-image: url("../../img/background_number-4.png");
+    &::after {
+      counter-increment: number;
+      content: counter(number);
+      position: absolute;
+      z-index: -1;
+      right: 10%;
+      top: -40px;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic_grey;
     }
   }
 

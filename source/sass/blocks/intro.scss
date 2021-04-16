@@ -1,34 +1,53 @@
 .intro {
-  background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background.jpg");
-  background-repeat: no-repeat;
-  background-size: auto 302px;
-  background-position: top;
-
-  @media (min-width: $tablet-width) {
-    background: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    top: -112px;
-    margin-bottom: -112px;
-  }
-}
-
-.intro__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
+  position: relative;
+  min-height: 480px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    height: 302px;
+    background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    min-height: 810px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 85px;
+    margin-top: 62px;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 20px;
+    margin: 0;
+    min-height: 583px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: -112px;
+      right: -110px;
+      width: 720px;
+      height: 694px;
+      background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background--desktop.jpg");
+      z-index: -1;
+    }
   }
 }
 
@@ -37,7 +56,6 @@
   font-weight: 400;
   color: $basic-white;
   padding-top: 27px;
-  min-height: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,19 +63,12 @@
   @media (min-width: $tablet-width) {
     color: $basic-black;
     align-items: flex-start;
-    padding: 0 85px;
-    margin-top: 62px;
-    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
-    color: $basic-black;
+    max-width: 480px;
     padding: 0;
-    padding-left: 190px;
-    padding-right: 20px;
-    margin: 0;
     margin-top: 114px;
-    flex-shrink: 1;
   }
 }
 
@@ -93,7 +104,6 @@
 
 .intro__button {
   width: 100%;
-  margin-top: auto;
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -109,34 +119,18 @@
 
 .intro__img {
   position: relative;
-  top: -340px;
-  margin-bottom: -272px;
+  top: 30px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    top: -250px;
-    margin-bottom: -250px;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    right: 0;
-    margin: 0;
-    background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background--desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    width: 720px;
-    height: 694px;
-    flex-shrink: 0;
-  }
-
-  img {
-    @media (min-width: $desktop-width) {
-      position: relative;
-      top: 200px;
-      left: -100px;
-    }
+    left: 40%;
   }
 }

@@ -30,3 +30,17 @@
     width: 25%;
   }
 }
+
+.optionally__label::before {
+  border: 1px solid $special_grey;
+}
+
+.optionally__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 19px;
+  height: 15px;
+  background: url("../../img/checkbox-on.svg");
+}

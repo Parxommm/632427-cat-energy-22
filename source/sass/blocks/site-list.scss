@@ -8,10 +8,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 110px;
-  }
 }
 
 .site-list__item {
@@ -22,10 +18,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 35px;
+    margin-left: 35px;
 
     &:first-child {
-      padding-left: 0;
+      margin-left: 0;
 
       .site-list__link {
         border: none;
@@ -53,6 +49,12 @@
     &--active {
       border-bottom: 2px solid $basic-white;
     }
+  }
+}
+
+.page-form .site-list__item--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic_green;
   }
 }
 

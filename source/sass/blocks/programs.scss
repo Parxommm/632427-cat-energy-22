@@ -1,32 +1,25 @@
 .programs {
+  margin-top: 22px;
+
   @media (min-width: $desktop-width) {
     margin-top: 82px;
-  }
-}
-
-.programs__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
   }
 }
 
 .programs__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 960px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px 80px;
+    max-width: 100%;
   }
 }
 
@@ -53,7 +46,6 @@
 
   @media (min-width: $desktop-width) {
     min-height: 374px;
-    width: 47%;
     margin-bottom: 0;
     padding: 77px 52px 59px 52px;
   }
@@ -166,14 +158,14 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 24px;
-    max-width: 377px;
+    max-width: 60%;
     border-bottom: none;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 73px;
-    max-width: max-content;
+    max-width: 100%;
   }
 }
 
