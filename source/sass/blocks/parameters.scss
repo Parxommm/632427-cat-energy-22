@@ -1,3 +1,9 @@
+.parameters {
+  padding: 20px;
+  margin-top: 19px;
+  border: none;
+}
+
 .parameters__list {
   margin: 0;
   padding: 0;
@@ -20,4 +26,6 @@
   line-height: 18px;
   color: $special_dark-grey;
   text-transform: uppercase;
+  margin-right: 15px;
+  white-space: nowrap;
 }

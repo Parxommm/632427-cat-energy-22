@@ -1,34 +1,53 @@
 .intro {
-  background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background.jpg");
-  background-repeat: no-repeat;
-  background-size: auto 302px;
-  background-position: top;
-
-  @media (min-width: $tablet-width) {
-    background: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    top: -112px;
-    margin-bottom: -112px;
-  }
-}
-
-.intro__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
+  position: relative;
+  min-height: 480px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    height: 302px;
+    background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    min-height: 810px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 85px;
+    margin-top: 62px;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 20px;
+    margin: 0;
+    min-height: 583px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: -112px;
+      right: -110px;
+      width: 720px;
+      height: 694px;
+      background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background--desktop.jpg");
+      z-index: -1;
+    }
   }
 }
 
@@ -37,21 +56,19 @@
   font-weight: 400;
   color: $basic-white;
   padding-top: 27px;
-  min-height: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
-    min-height: 284px;
     align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    color: $basic-black;
-    padding-left: 190px;
-    padding-top: 150px;
+    max-width: 480px;
+    padding: 0;
+    margin-top: 114px;
   }
 }
 
@@ -61,6 +78,12 @@
   line-height: 36px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .intro__slogan {
@@ -68,41 +91,46 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 41px;
+    text-align: left;
+  }
 }
 
 .intro__button {
   width: 100%;
-  margin-top: auto;
 
   @media (min-width: $tablet-width) {
     width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     margin: 0;
+    margin-top: 49px;
   }
 }
 
 .intro__img {
   position: relative;
-  top: -320px;
-  margin-bottom: -280px;
+  top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: 0;
-    margin-bottom: 0;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background--desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    width: 720px;
-    height: 694px;
-  }
-
-  img {
-    position: relative;
-    top: 200px;
-    left: -100px;
+    left: 40%;
   }
 }

@@ -1,3 +1,9 @@
+.problems {
+  padding: 20px;
+  border-left: none;
+  border-right: none;
+}
+
 .problems__list {
   margin: 0;
   padding: 0;
@@ -15,4 +21,20 @@
 
 .problems__label {
   color: $special_dark-grey-2;
+
+  &::before {
+    border: 1px solid $special_grey;
+    border-radius: 50%;
+  }
+}
+
+.problems__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: $basic_green;
+  border-radius: 50%;
 }
