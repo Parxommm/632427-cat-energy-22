@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page page-form" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page-header wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/header__logo.svg" width="191" height="38" alt="Cat Energy">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -35,7 +35,7 @@
 
     <main class="page-main">
       <section class="program-selection">
-        <div class="program-selection__title-wrapper">
+        <div class="wrapper">
           <h1 class="program-selection__title">Подбор программы</h1>
           <p class="program-selection__description">
             Заполните анкету, и мы подберем программу питания для вашего кота
@@ -81,11 +81,11 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="contacts__label" for="contacts__email">E-mail:*</label>
-                <input class="contacts__input input-text" id="contacts__email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                <input class="contacts__input contacts__input--email input-text" id="contacts__email" type="email" name="email" placeholder="kuklachev@gmail.com">
               </li>
               <li class="contacts__item">
                 <label class="contacts__label" for="contacts__phone">Телефон:*</label>
-                <input class="contacts__input input-text" id="contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                <input class="contacts__input contacts__input--phone input-text" id="contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
@@ -116,25 +116,25 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <span class="form__legend">* — Обязательные поля</span>
+          <div class="wrapper">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <span class="form__legend">* — Обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__top">
-        <div class="page-footer__contacts">
-          <p class="page-footer__invitation">
-            Приглашаем<br>
-            к сотрудничеству<br>
-            дилеров!</p>
-          <p class="page-footer__address">
-            ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            <span>Санкт-Петербург</span>
-          </p>
-        </div>
+      <div class="page-footer__top page-footer__top--form">
+        <p class="page-footer__invitation">
+          Приглашаем<br>
+          к сотрудничеству<br>
+          дилеров!</p>
+        <p class="page-footer__address">
+          ул. Большая<br>
+          Конюшенная, д. 19/8<br>
+          <span>Санкт-Петербург</span>
+        </p>
       </div>
       <div class="page-footer__map">
         <img src="img/map-office.png" width="320" height="362" alt="Мы на карте">
