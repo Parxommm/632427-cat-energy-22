@@ -1,5 +1,7 @@
 .program-selection {
   font-family: "Oswald", sans-serif;
+  padding-top: 27px;
+  padding-bottom: 32px;
 }
 
 .program-selection__title-wrapper {
@@ -19,6 +21,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
 }
 
 .program-selection__description {
@@ -27,4 +30,6 @@
   line-height: 18px;
   text-transform: uppercase;
   max-width: 250px;
+  margin-top: 37px;
+  margin-bottom: 19px;
 }
