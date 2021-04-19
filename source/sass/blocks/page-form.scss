@@ -1,0 +1,7 @@
+.page-form .page-footer__top {
+  background-color: $basic_grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
