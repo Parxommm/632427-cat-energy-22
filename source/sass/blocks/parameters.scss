@@ -1,6 +1,14 @@
 .parameters {
-  padding: 20px;
+  padding: 20px 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .parameters__list {
@@ -18,6 +26,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .parameters__label {
@@ -27,4 +39,9 @@
   text-transform: uppercase;
   margin-right: 15px;
   white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

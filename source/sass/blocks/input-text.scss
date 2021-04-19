@@ -13,9 +13,14 @@
 
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 18px;
     color: $special_dark-grey;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding-left: 18px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

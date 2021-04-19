@@ -2,18 +2,13 @@
   font-family: "Oswald", sans-serif;
   padding-top: 27px;
   padding-bottom: 32px;
-}
-
-.program-selection__title-wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 65px 70px 72px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 77px 110px 82px;
   }
 }
 
@@ -22,6 +17,11 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-selection__description {
@@ -31,5 +31,16 @@
   text-transform: uppercase;
   max-width: 250px;
   margin-top: 37px;
-  margin-bottom: 19px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 60%;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+  }
 }
