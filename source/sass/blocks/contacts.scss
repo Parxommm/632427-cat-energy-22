@@ -1,6 +1,4 @@
 .contacts {
-  border: none;
-  border-top: 2px solid $basic_green;
   margin-top: 26px;
   padding: 0;
 
@@ -14,11 +12,14 @@
 }
 
 .contacts__title {
-  width: 200px;
+  span {
+    width: 185px;
+  }
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    padding-right: 20px;
+    span {
+      width: auto;
+    }
   }
 }
 
