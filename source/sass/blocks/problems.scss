@@ -1,7 +1,22 @@
 .problems {
   padding: 20px;
+  border: 1px solid $basic_grey-4;
   border-left: none;
   border-right: none;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 28px;
+    margin: 0;
+    margin-top: 52px;
+    width: 100%;
+    border: 1px solid $basic_grey-4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .problems__list {
@@ -16,6 +31,11 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+    margin-bottom: 13px;
   }
 }
 
@@ -37,4 +57,11 @@
   height: 13px;
   background-color: $basic_green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
 }

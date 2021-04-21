@@ -9,8 +9,14 @@
     cursor: pointer;
     user-select: none;
     padding-left: 45px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 60px;
+    }
   }
 }
 
@@ -22,4 +28,9 @@
   width: 30px;
   height: 30px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
