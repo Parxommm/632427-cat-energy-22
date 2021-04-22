@@ -3,11 +3,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background-image: url("../../img/promotion.jpg");
   height: 289px;
+  margin-top: 39px;
+  padding: 58px 20px 43px;
+  box-sizing: border-box;
+  background-image: url("../../img/promotion.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    height: 200px;
+    padding: 30px 124px 30px 78px;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 20px 40px;
+    margin-top: 0;
+    height: 289px;
+  }
 }
 
 .promotions__link {
@@ -31,4 +47,30 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+
+    &::before {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+  }
+}
+
+.promotion__info {
+  margin: 0;
 }
