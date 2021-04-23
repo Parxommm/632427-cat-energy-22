@@ -1,11 +1,13 @@
 .main-nav {
   @media (min-width: $tablet-width) {
     min-height: 36px;
+    padding-top: 18px;
   }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     z-index: 3;
+    padding-top: 16px;
   }
 }
 

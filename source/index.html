@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="source/img/favicon/favicon32.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header wrapper">
       <a class="page-header__logo">
-        <img src="img/header__logo.svg" width="191" height="38" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/header__logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header__logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/header__logo.svg" width="191" height="38" alt="Cat Energy">
+        </picture>
+
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -40,7 +47,11 @@
           <p class="intro__slogan">Занялся собой? Займись котом!</p>
         </header>
         <div class="intro__img">
-          <img src="img/index-main-photo.png" width="280" height="270" alt="Питание в упаковке">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/intro-main-photo-desktop.png 1x, img/intro-main-photo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/intro-main-photo-tablet.png 1x, img/intro-main-photo-tablet@2x.png 2x">
+            <img src="img/intro-main-photo.png" srcset="img/intro-main-photo@2x.png 2x" width="280" height="270" alt="Питание в упаковке">
+          </picture>
         </div>
         <a class="intro__button button button--green" href="form.html">Подобрать программу</a>
       </section>
@@ -110,8 +121,16 @@
         </div>
         <div class="example__slider">
           <div class="example__img">
-            <img class="example__before" src="img/cat-after.png" width="251" height="240" alt="Кот до питания Cat Energy">
-            <img class="example__after" src="img/cat-before.png" width="280" height="232" alt="Кот после питания Cat Energy">
+            <picture class="example__before">
+              <img src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" width="251" height="240" alt="Кот до питания Cat Energy">
+            </picture>
+            <picture class="example__after">
+              <img src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="311" height="232" alt="Кот после питания Cat Energy">
+            </picture>
+            <picture class="example__before-after">
+              <source media="(min-width: 1440px)" srcset="img/cat-before-after-tablet.png 1x, img/cat-before-after-tablet@2x.png 2x">
+              <img src="img/cat-before-after-desktop.png" srcset="img/cat-before-after-desktop@2x.jpg 2x" width="708" height="620" alt="Сравнение котов">
+            </picture>
           </div>
           <div class="example__comparison">
             <span class="example__text">Было</span>
@@ -140,7 +159,7 @@
           </p>
       </div>
       <div class="page-footer__map">
-        <img src="img/map-office.png" width="320" height="362" alt="Мы на карте">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf2dab9f31528702fb086408632802a2c7589f8ed005a9b2f7888dd7b9cfb641&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
       </div>
       <div class="page-footer__bottom">
         <a class="page-footer__logo">
