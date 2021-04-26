@@ -9,20 +9,32 @@
   box-sizing: border-box;
   background-image: url("../../img/promotion.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/promotion@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
     height: 200px;
     padding: 30px 124px 30px 78px;
-    background-size: cover;
+    background-image: url("../../img/promotion-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promotion-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 55px 20px 40px;
     margin-top: 0;
     height: 289px;
+    background-image: url("../../img/promotion-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promotion-desktop@2x.jpg");
+    }
   }
 }
 
