@@ -58,39 +58,55 @@
   position: absolute;
 }
 
-.programs__item--slim .programs__icon {
-  @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 211px;
-    right: 62px;
-    top: 77px;
-  }
+.programs__item--slim {
+  .programs__icon {
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 211px;
+      right: 62px;
+      top: 77px;
+    }
 
-  @media (min-width: $desktop-width) {
-    width: 100px;
-    height: 106px;
-    right: auto;
-    top: 41px;
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 106px;
+      right: auto;
+      top: 41px;
+    }
   }
 }
 
-.programs__item--pro .programs__icon {
-  left: 13px;
-  top: 24px;
+.programs__item--pro {
+  .programs__icon {
+    left: 13px;
+    top: 24px;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 268px;
-    height: 200px;
-    left: auto;
-    right: 28px;
-    top: 91px;
+    .programs__icon {
+      width: 268px;
+      height: 200px;
+      left: auto;
+      right: 28px;
+      top: 91px;
+    }
+
+    .programs__description {
+      max-width: 54.5%;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 134px;
-    height: 100px;
-    left: 33px;
-    top: 47px;
+    .programs__icon {
+      width: 134px;
+      height: 100px;
+      left: 33px;
+      top: 47px;
+    }
+
+    .programs__description {
+      max-width: 100%;
+    }
   }
 }
 
