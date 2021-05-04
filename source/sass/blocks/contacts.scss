@@ -1,5 +1,5 @@
 .contacts {
-  margin-top: 26px;
+  margin-top: 25px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -16,9 +16,20 @@
     width: 185px;
   }
 
+  &::before,
+  &::after {
+    position: relative;
+    top: -10px;
+  }
+
   @media (min-width: $tablet-width) {
     span {
       width: auto;
+    }
+
+    &::before,
+    &::after {
+      top: 5px;
     }
   }
 }
@@ -49,6 +60,10 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
@@ -66,21 +81,29 @@
     font-size: 20px;
     line-height: 30px;
     margin-right: 15px;
+
+    &--email {
+      margin-right: 21px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 20px;
+
+    &--tel {
+      margin-right: 14px;
+    }
   }
 }
 
 .contacts__input {
   padding-right: 35px;
-  background-position: right 16px center;
+  background-position: right 14px center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     padding-right: 39px;
-    background-position: right 20px center;
+    background-position: right 15px center;
   }
 }
 

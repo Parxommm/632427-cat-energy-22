@@ -4,17 +4,45 @@
   @media (min-width: $tablet-width) {
     margin-top: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+  }
+}
+
+.comment__title {
+  span {
+    margin-right: 22px;
+  }
+
+  &::after,
+  &::before {
+    position: relative;
+    top: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    span {
+      margin-right: 40px;
+    }
+
+    &::after,
+    &::before {
+      position: relative;
+      top: 5px;
+    }
+  }
 }
 
 .comment__text {
   height: 150px;
   width: 100%;
   margin-top: 38px;
-  padding: 10px 12px;
+  padding: 8px 13px;
 
   @media (min-width: $tablet-width) {
     margin-top: 76px;
-    padding: 10px 20px;
+    padding: 8px 18px;
     height: 174px;
   }
 }
