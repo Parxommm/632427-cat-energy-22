@@ -39,7 +39,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
+    margin-top: 5px;
   }
 }
 
@@ -48,16 +49,23 @@
   line-height: 20px;
   color: $special_dark-grey;
   margin: 0;
+  margin-right: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    margin-right: 2px;
+    margin-top: 7px;
 
     span {
       display: block;
       margin-top: 20px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -96,15 +104,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 110px;
+    padding: 25px 110px 20px;
   }
 }
 
 .page-footer__logo {
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+  text-align: center;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
@@ -115,11 +121,16 @@
   }
 }
 
+.page-footer__social {
+  margin-top: 25px;
+}
+
 .page-footer__copyright {
   margin-top: 22px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-top: -10px;
+    padding-right: 2px;
   }
 }
 
@@ -138,7 +149,11 @@
     margin-right: 22px;
   }
 
-  &:hover path {
+  svg {
+    fill: $special_grey-2;
+  }
+
+  &:hover svg {
     fill: $basic_green;
   }
 
