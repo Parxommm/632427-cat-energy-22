@@ -6,7 +6,6 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="source/img/favicon/favicon32.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -145,12 +144,18 @@
           <div class="example__img">
             <div class="example__after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                 <img src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" width="311" height="232" alt="Кот до питания Cat Energy">
               </picture>
             </div>
             <div class="example__before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
                 <img src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="251" height="240" alt="Кот после питания Cat Energy">
               </picture>
@@ -228,22 +233,7 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>
