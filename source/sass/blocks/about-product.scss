@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 70px;
+    margin-top: 71px;
   }
 }
 
@@ -24,7 +24,7 @@
 }
 
 .about-product__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -84,9 +84,9 @@
       content: counter(number);
       position: absolute;
       z-index: -1;
-      right: 85px;
+      right: 76px;
       top: -40px;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
       line-height: 280px;
       color: $basic_grey;
@@ -100,10 +100,24 @@
       right: 0;
     }
   }
+
+  &--useful {
+    @media (min-width: $tablet-width) {
+      &::after {
+        right: 95px;
+      }
+    }
+  }
 }
 
 .about-product__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
+  background-color: $basic_green;
 
   @media (min-width: $tablet-width) {
     position: absolute;

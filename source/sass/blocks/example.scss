@@ -30,7 +30,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -56,8 +56,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
-  margin-top: 33px;
-  margin-bottom: 27px;
+  margin-top: 34px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -103,7 +103,7 @@
 }
 
 .example__value {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -120,13 +120,19 @@
     line-height: 37px;
     width: 162px;
     height: 72px;
+    padding-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
   }
 }
 
 .example__subtitle {
   position: relative;
   top: -10px;
-  right: 20px;
+  right: -17px;
+  margin: 0;
   margin-bottom: -10px;
   font-size: 12px;
   line-height: 12px;
@@ -143,11 +149,14 @@
     line-height: 14px;
     width: fit-content;
     min-height: 14px;
-    right: 30px;
     background-color: $basic-white;
 
+    &--weight {
+      right: -24px;
+    }
+
     &--time {
-      right: 16px;
+      right: -9px;
     }
   }
 
@@ -157,7 +166,7 @@
 }
 
 .example__expenses {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -188,16 +197,21 @@
 }
 
 .example__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $special_grey;
+
+    &:hover {
+      border-bottom: 1px solid $special_grey;
+    }
   }
 }
 
@@ -229,13 +243,13 @@
 .example__img {
   margin-top: 42px;
   width: calc(100% + 40px);
-  margin-left: -20px;
+  margin-left: -25px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     max-width: 708px;
     box-sizing: border-box;
-    padding-left: 16px;
+    padding-left: 15px;
     margin: 0;
     position: relative;
     top: -170px;
@@ -245,7 +259,7 @@
 
   @media (min-width: $desktop-width) {
     top: -192px;
-    left: 57px;
+    left: 58px;
     margin-bottom: -190px;
     padding-left: 0;
   }
@@ -267,7 +281,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 48%;
+    width: 50%;
 
     img {
       margin-left: -350px;
@@ -287,7 +301,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 52%;
+    width: 53.5%;
   }
 }
 
@@ -297,7 +311,7 @@
   justify-content: space-between;
   width: 200px;
   margin: 0 auto;
-  margin-top: 26px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     width: 572px;
@@ -311,6 +325,20 @@
     justify-content: space-between;
     margin-top: 25px;
     align-self: flex-end;
+  }
+}
+
+.example__text--before {
+  margin-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.example__text--after {
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
   }
 }
 
@@ -337,7 +365,7 @@
   height: 6px;
   background: $basic_green;
   border-radius: 6px;
-  width: 45%;
+  width: 48%;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -352,6 +380,7 @@
     top: -12px;
     left: 47%;
     padding: 0;
+    cursor: pointer;
     border: 1px solid $special_grey;
     background-color: $basic-white;
     border-radius: 50%;
@@ -367,6 +396,14 @@
       left: 12px;
       background-color: $basic_green;
       border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $basic_green;
     }
   }
 }

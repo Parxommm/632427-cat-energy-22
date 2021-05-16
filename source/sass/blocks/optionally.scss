@@ -64,8 +64,16 @@
   }
 }
 
-.optionally__label::before {
-  border: 1px solid $special_grey;
+.optionally__label {
+  &::before {
+    border: 1px solid $special_grey;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid $special_grey-4;
+    }
+  }
 }
 
 .optionally__input:checked + label::after {

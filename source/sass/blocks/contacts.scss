@@ -55,6 +55,7 @@
   justify-content: right;
   align-items: center;
   margin-bottom: 14px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -90,7 +91,7 @@
   @media (min-width: $desktop-width) {
     margin-right: 20px;
 
-    &--tel {
+    &--phone {
       margin-right: 14px;
     }
   }
@@ -107,10 +108,31 @@
   }
 }
 
-.contacts__input--email {
-  background-image: url("../../img/icon_email.svg");
+.contacts__input-icon {
+  position: absolute;
+  right: 15px;
+
+  &--email {
+    stroke: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+  }
 }
 
-.contacts__input--phone {
-  background-image: url("../../img//icon-phone.svg");
+.contacts__input:focus + .contacts__input-icon--email {
+  stroke: $basic_green;
+}
+
+.contacts__input:focus + .contacts__input-icon--phone {
+  fill: $basic_green;
+}
+
+.contacts__input:invalid + .contacts__input-icon--email {
+  stroke: $status_error;
+}
+
+.contacts__input:invalid + .contacts__input-icon--phone {
+  fill: $status_error;
 }

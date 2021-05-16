@@ -46,6 +46,12 @@
     border: 1px solid $special_grey;
     border-radius: 50%;
   }
+
+  &:hover {
+    &::before {
+      border: 1px solid $special_grey-4;
+    }
+  }
 }
 
 .problems__input:checked + label::after {
