@@ -1,5 +1,5 @@
 .optionally-product {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   padding-top: 25px;
   padding-bottom: 35px;
@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 68px;
-    padding-bottom: 76px;
+    padding-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +50,10 @@
     grid-column: 1 / -1;
     width: calc(100% + 220px);
     margin-left: -110px;
+
+    span {
+      margin-left: 40px;
+    }
   }
 }
 

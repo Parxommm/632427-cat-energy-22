@@ -7,6 +7,9 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="source/img/favicon/favicon32.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="page-header wrapper">
@@ -84,10 +87,16 @@
               <li class="contacts__item">
                 <label class="contacts__label contacts__label--email" for="contacts__email">E-mail:*</label>
                 <input class="contacts__input contacts__input--email input-text" id="contacts__email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                <svg class="contacts__input-icon contacts__input-icon--email" width="20" height="15">
+                  <use xlink:href="img/sprite.svg#icon-email"></use>
+                </svg>
               </li>
               <li class="contacts__item">
-                <label class="contacts__label contacts__label--tel" for="contacts__phone">Телефон:*</label>
+                <label class="contacts__label contacts__label--phone" for="contacts__phone">Телефон:*</label>
                 <input class="contacts__input contacts__input--phone input-text" id="contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                <svg class="contacts__input-icon contacts__input-icon--phone" width="20" height="21">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </li>
             </ul>
           </fieldset>
@@ -116,7 +125,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
+          <button class="form__button button button--green" type="submit">Отправить заявку</button>
           <span class="form__legend">* — Обязательные поля</span>
         </form>
       </section>
@@ -135,10 +144,10 @@
           </p>
       </div>
       <div class="page-footer__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf2dab9f31528702fb086408632802a2c7589f8ed005a9b2f7888dd7b9cfb641&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf2dab9f31528702fb086408632802a2c7589f8ed005a9b2f7888dd7b9cfb641&amp;source=constructor" width="320" height="362"></iframe>
       </div>
       <div class="page-footer__bottom">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="https://htmlacademy.ru/">
           <img src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
         </a>
         <div class="page-footer__social social">

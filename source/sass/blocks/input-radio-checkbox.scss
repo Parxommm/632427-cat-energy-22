@@ -34,3 +34,11 @@
     height: 40px;
   }
 }
+
+.input-radio-checkbox > input:disabled + label {
+  opacity: 0.3;
+}
+
+.input-radio-checkbox > input:focus + label {
+  outline: 2px solid $special_dark-grey;
+}

@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 82px;
+    margin-top: 81px;
   }
 }
 
@@ -32,6 +32,7 @@
   min-height: 266px;
   margin-bottom: 20px;
   padding: 20px;
+  padding-bottom: 18px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -111,7 +112,7 @@
 }
 
 .programs__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -148,7 +149,7 @@
   line-height: 18px;
   color: $special_dark-grey;
   margin-bottom: 0;
-  margin-top: 29px;
+  margin-top: 30px;
   padding-bottom: 23px;
   border-bottom: 1px solid $basic_grey-4;
 
@@ -168,45 +169,49 @@
 }
 
 .programs__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-decoration: none;
   text-transform: uppercase;
   margin-top: auto;
-  padding-right: 40px;
   position: relative;
   width: fit-content;
+  display: flex;
+  align-items: center;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: 80%;
-    width: 24px;
-    height: 12px;
-    background-image: url("../../img/icon-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  span {
+    margin-right: 15px;
+  }
+
+  .programs__icon-arrow-long {
+    display: none;
   }
 
   &:hover {
-    &::before {
-      width: 32px;
-      background-image: url("../../img/icon-arrow--hover.svg");
+    .programs__icon-arrow {
+      display: none;
     }
-  }
 
-  &:active {
-    opacity: 0.3;
+    .programs__icon-arrow-long {
+      display: block;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
 
-    &::before {
-      top: 9px;
-      left: 90%;
+    span {
+      margin-right: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    span {
+      margin-right: 27px;
     }
   }
 }

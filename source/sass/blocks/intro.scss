@@ -47,8 +47,9 @@
       position: absolute;
       top: -112px;
       right: -110px;
-      width: 720px;
+      width: 50vw;
       height: 694px;
+      background-color: $basic_green;
       background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background-desktop.jpg");
       z-index: -1;
 
@@ -60,7 +61,7 @@
 }
 
 .intro__header {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: $basic-white;
   padding-top: 27px;
@@ -157,7 +158,7 @@
 
   @media (min-width: $desktop-width) {
     top: 29px;
-    left: 37%;
+    left: 36.7%;
 
     img {
       width: 552px;
