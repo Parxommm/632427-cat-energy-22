@@ -107,6 +107,12 @@
         right: 95px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        right: 16px;
+      }
+    }
   }
 }
 
