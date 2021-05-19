@@ -49,7 +49,7 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <form class="program-selection__form form" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__parameters parameters">
+          <fieldset class="form__group form__group--parameters parameters">
             <ul class="parameters__list">
               <li class="parametrs__item">
                 <label class="parameters__label" for="parametrs__name">Имя:*</label>
@@ -65,7 +65,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__problems problems">
+          <fieldset class="form__group form__group--problems problems">
             <ul class="problems__list">
               <li class="problems__item input-radio-checkbox">
                 <input class="problems__input problems__input--radio visually-hidden" type="radio" name="problems" value="Похудение" id="problems__weight-loss" checked>
@@ -81,8 +81,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts contacts">
-            <h2 class="contacts__title fieldset-title"><span>Контактные данные (владельца кота)</span></h2>
+          <fieldset class="form__group form__group--contacts contacts">
+            <h2 class="contacts__title form__group-title"><span>Контактные данные (владельца кота)</span></h2>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="contacts__label contacts__label--email" for="contacts__email">E-mail:*</label>
@@ -100,12 +100,12 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__comment comment">
-            <h2 class="comment__title fieldset-title"><span>Комментарий</span></h2>
+          <fieldset class="form__group form__group--comment comment">
+            <h2 class="comment__title form__group-title"><span>Комментарий</span></h2>
             <textarea class="comment__text input-text" name="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
-          <fieldset class="form__optionally optionally">
-            <h2 class="optionally__title fieldset-title"><span>Дополнительно</span></h2>
+          <fieldset class="form__group form__group--optionally optionally">
+            <h2 class="optionally__title form__group-title"><span>Дополнительно</span></h2>
             <ul class="optionally__list">
               <li class="optionally__item input-radio-checkbox">
                 <input class="optionally__input optionally__input--checkbox visually-hidden" type="checkbox" name="option" value="Сахарозаменитель" id="optionally__sweetener" checked>

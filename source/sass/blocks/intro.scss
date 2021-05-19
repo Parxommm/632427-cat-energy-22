@@ -11,6 +11,7 @@
     width: calc(100% + 40px);
     margin-left: -20px;
     height: 302px;
+    background-color: $basic_green;
     background-image: linear-gradient(rgba($basic_green, 0.85), rgba($basic_green, 0.85)), url("../../img/intro-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,6 +120,8 @@
 
 .intro__button {
   width: 100%;
+  line-height: 18px;
+  padding: 10px 20px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
